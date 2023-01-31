@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../../style.css">
+</head>
+
+<body>
+
+    <head>
+        <h1>Star Sars Api</h1>
+    </head>
+
+    <div id="loading" class="l"></div>
+
+    <div id="error" class="error"></div>
+
+    <section id="result-list">
+        <div id="planetsContainer" class="container-detail">
+            <div class="card p-3 ">
+                <h3 id="name" class="card-title text-center"></h3>
+                <div class="card-content">
+                    <p><span><strong>Rotation period: </strong></span><span id="rotation_period"></span>h</p>
+                    <p><span><strong>Orbital period: </strong></span><span id="orbital_period"></span>d</p>
+                    <p><span><strong>Diameter: </strong></strong></span><span id="diameter"></span>km</p>
+                    <p><span><strong>Climate: </strong></span><span id="climate"></span></p>
+                    <p><span><strong>Gravity: </strong></span><span id="gravity"></span></p>
+                    <p><span><strong>terrain: </strong></span><span id="terrain"></span></p>
+                    <p><span><strong>Surface_water: </strong></span><span id="surface_water"></span></p>               
+                    <p><span><strong>Population: </strong></span><span id="population"></span></p>
+                    <p><span><strong>Created: </strong></span><span id="created"></span></p>
+                    <p class="last-item"><strong><span>Edited: </strong></span><span id="edited"></span></p>
+                    <button class="btn btn-secondary" onclick="location.href='../../../index.html?value=planets'">
+                        Back
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="planets.js"></script>
+</body>
+
+</html>

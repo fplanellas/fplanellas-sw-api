@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../../style.css">
+</head>
+
+<body>
+
+    <head>
+        <h1>Star Sars Api</h1>
+    </head>
+
+    <div id="loading" class="l"></div>
+
+    <div id="error" class="error"></div>
+
+    <section id="result-list">
+        <div id="speciesContainer" class="container-detail">
+            <div class="card p-3 ">
+                <h3 id="name" class="card-title text-center"></h3>
+                <div class="card-content">
+                    <p><span><strong>Classification: </strong></span><span id="classification"></span></p>
+                    <p><span><strong>Designation: </strong></span><span id="designation"></span></p>
+                    <p><span><strong>Average height: </strong></strong></span><span id="average_height"></span>cm</p>
+                    <p><span><strong>Skin colors: </strong></span><span id="skin_colors"></span></p>
+                    <p><span><strong>Hair colors: </strong></span><span id="hair_colors"></span></p>
+                    <p><span><strong>Eye colors: </strong></span><span id="eye_colors"></span></p>
+                    <p><span><strong>Average lifespan: </strong></span><span id="average_lifespan"></span> Years</p>
+                    <p><span><strong>language: </strong></span><span id="language"></span></p>
+                    <p><span><strong>Created: </strong></span><span id="created"></span></p>
+                    <p class="last-item"><strong><span>Edited: </strong></span><span id="edited"></span></p>
+                    <button class="btn btn-secondary" onclick="location.href='../../../index.html?value=species'">
+                        Back
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="species.js"></script>
+</body>
+
+</html>

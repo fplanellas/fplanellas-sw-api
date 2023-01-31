@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../../style.css">
+</head>
+
+<body>
+    <head>
+        <h1>Star Wars Api</h1>
+    </head>
+
+    <div id="loading" class="l"></div>
+
+    <div id="error" class="error"></div>
+
+    <section id="result-list">
+        <div id="starshipsContainer" class="container-detail">
+            <div class="card p-3 ">
+                <h3 id="name" class="card-title text-center"></h3>
+                <div class="card-content">
+                    <p><span><strong>Model: </strong></span><span id="model"></span></p>
+                    <p><span><strong>Manufacturer: </strong></span><span id="manufacturer"></span></p>
+                    <p><span><strong>Cost in credits: </strong></strong></span><span id="cost_in_credits"></span></p>
+                    <p><span><strong>Length: </strong></span><span id="length"></span></p>
+                    <p><span><strong>Max atmosphering speed: </strong></span><span id="max_atmosphering_speed"></span></p>
+                    <p><span><strong>Crew: </strong></span><span id="crew"></span></p>
+                    <p><span><strong>Passengers: </strong></span><span id="passengers"></span></p>
+                    <p><span><strong>Cargo capacity: </strong></span><span id="cargo_capacity"></span></p>
+                    <p><span><strong>Consumables: </strong></span><span id="consumables"></span></p>
+                    <p><span><strong>Hyperdrive rating: </strong></span><span id="hyperdrive_rating"></span></p>
+                    <p><span><strong>MGLT: </strong></span><span id="MGLT"></span></p>
+                    <p><span><strong>Starship class: </strong></span><span id="starship_class"></span></p>
+                    <p><span><strong>Created: </strong></span><span id="created"></span></p>
+                    <p class="last-item"><strong><span>Edited: </strong></span><span id="edited"></span></p>
+                    <button class="btn btn-secondary" onclick="location.href='../../../index.html?value=starships'">
+                        Back
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="starships.js"></script>
+</body>
+
+</html>

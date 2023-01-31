@@ -1,0 +1,11 @@
+{
+  "name": "starwarsspa",
+  "version": "1.0.0",
+  "description": "starwarsapi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fplanellas",
+  "license": "ISC"
+}
