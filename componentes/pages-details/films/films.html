@@ -26,13 +26,15 @@
         <div id="filmsContainer" class="container-detail">
             <div class="card p-3 ">
                 <h3 id="title" class="card-title text-center"></h3>
-                <div class="card-content">
+                <div class="card-content" id="card-content-film">
                     <p><span><strong>Director: </strong></span><span id="director"></span></p>
                     <p><span><strong>Producer: </strong></span><span id="producer"></span></p>
                     <p><span><strong>Release date: </strong></strong></span><span id="release_date"></span></p>
                     <p><span><strong>Opening crawl: </strong></strong></span><span id="opening_crawl"></span></p>
                     <p><span><strong>Created: </strong></span><span id="created"></span></p>
-                    <p class="last-item"><strong><span>Edited: </strong></span><span id="edited"></span></p>
+                    <p><strong><span>Edited: </strong></span><span id="edited"></span></p>  
+                    <p> <button class="abrir" id="abrir-cerrar">Characters</button> </p>
+                    <div class="characters-container" id="charactersContainer"></div>   
                     <button class="btn btn-secondary" onclick="location.href='../../../index.html?value=films'">
                         Back
                     </button>

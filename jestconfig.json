@@ -1,0 +1,18 @@
+{
+    "testEnvironment": "jsdom",
+    "collectCoverage": true,
+    "coverageThreshold": {
+        "global": {
+            "branches": 50,
+            "functions": 100,
+            "lines": 85
+        }
+    },
+    "testTimeout": 300000,
+    "globals": {
+        "globalVar": "a global variable"
+    },
+    "snapshotFormat": {
+        "printBasicPrototype": false
+    }
+}

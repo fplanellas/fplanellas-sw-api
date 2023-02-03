@@ -5,6 +5,7 @@ const getUrl = new URLSearchParams(window.location.search);
 const url = getUrl.get("url");
 
 showLoading();
+const peopleBack = document.referrer;
 
 fetch(url)
     .then((res) => res.json())
@@ -28,3 +29,7 @@ fetch(url)
         const containerResults = document.getElementById("result-list");
         containerResults.classList.remove("show-results");
     });
+
+document.querySelector("#peopleBack").addEventListener("click", ({ target }) => {
+    location.href = `${peopleBack}`;
+});

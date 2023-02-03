@@ -8,6 +8,7 @@ export const getPeople = async (res, value) => {
 
     const dataRes = await res.json();
     const data = dataRes.results;
+    console.log(value);
 
     if (data.length === 0) {
         errorSearchNotFound("people");
@@ -21,15 +22,10 @@ export const getPeople = async (res, value) => {
             <div class="card-content">
                 <span><strong>Height: </strong>${item.height}</span>
                 <span><strong>Gender: </strong>${item.gender}</span>
-                <span class="last-item"><strong>Release Date: </strong>${
-                    item.birth_year
-                }</span>
-                ${console.log(item.url)}
+                <span class="last-item"><strong>Release Date: </strong>${item.birth_year}</span>
                 <button
                     class="btn btn-secondary"
-                    onclick="location.href='./componentes/pages-details/people/people.html?url=${
-                        item.url
-                    }'">
+                    onclick="location.href='./componentes/pages-details/people/people.html?url=${item.url}'">
                     See more
                 </button>
             </div>

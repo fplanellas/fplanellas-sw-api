@@ -1,5 +1,3 @@
-import { asyncFetch } from "../getApi/getApi.js";
-
 export const errorFetch = () => {
     const error = document.getElementById("error");
     error.classList.add("show-error");
@@ -23,7 +21,7 @@ export const errorFetch2 = () => {
 export const errorSearch = () => {
     const error = document.getElementById("error");
     error.classList.add("show-error");
-    error.innerHTML = `<p>You must type at least two characters</p><button id="error-button">Close</button>`;
+    error.innerHTML = `<p>You must type at least three characters</p><button id="error-button">Close</button>`;
 
     document.getElementById("error-button").addEventListener("click", function () {
         return error.classList.remove("show-error");
@@ -37,7 +35,6 @@ export const errorSearchNotFound = (value) => {
 
     document.getElementById("error-button").addEventListener("click", function () {
         error.classList.remove("show-error");
-        console.log(value);
-        return asyncFetch(value);
+        return (location.href = `../../../index.html?value=${value}`);
     });
 };

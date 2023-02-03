@@ -20,7 +20,7 @@ export const searchListener = (value) => {
         const name = document.getElementById("name").value;
         const searchedUrl = `${value}/?search=${name}`;
 
-        if (name.length <= 1) return errorSearch();
+        if (name.length <= 2) return errorSearch();
 
         return asyncFetch(searchedUrl);
     });
